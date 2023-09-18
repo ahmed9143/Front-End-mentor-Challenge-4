@@ -1,0 +1,105 @@
+/* Reset some default styles */
+body, h3, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common styles for both mobile and desktop */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+    font-family: Arial, Tahoma, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container .content {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.content h3 {
+    font-size: 25px;
+}
+
+.content h3 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.content p {
+    font-weight: bold;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+.overflow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.overflow {
+    flex: 1;
+    padding: 10px;
+}
+
+.overflow .p1, .p2, .p3 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.overflow {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.overflow p {
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+.photo img {
+    display: block;
+    width: 400px;
+    height: auto;
+    background-color:hsl(277, 64%, 61%) ;
+}
+
+/* Mobile styles (up to 375px) */
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .content {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .overflow {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
